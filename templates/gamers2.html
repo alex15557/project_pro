@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Игра</title>
+</head>
+<body>
+
+
+<p>Недостаточно участников, добавьте участника:</p>
+
+<table frame="border" height="300" width="300" border="1">
+
+        {% for i in range(num) %}
+        <tr><th>{{context_names[i]}}</th>
+        {% endfor %}
+    </table>
+
+    <hr>
+    <form method="post">
+        <p>Введите ваше имя</p>
+        <input type="text" name="input_name">
+        <br>
+        <br>
+        <button type="submit">ОК</button>
+
+    </form>
+<br>
+<br>
+</body>
+</html>

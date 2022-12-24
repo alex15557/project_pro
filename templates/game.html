@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Игра</title>
+</head>
+<body>
+<a href="/index/">Главная страница</a>
+<p></p>
+<a href="/gamers/">Добавить игрока</a>
+
+<p>Играют:</p>
+
+<table frame="border" height="300" width="300" border="1">
+
+        {% for i in range(num) %}
+        <tr><th>{{context_names[i]}}</th>
+        {% endfor %}
+    </table>
+
+    <hr>
+    <form method="post">
+
+
+        <br>
+        <br>
+        <button type="submit">ИГРАТЬ</button>
+
+    </form>
+
+</body>
+</html>
